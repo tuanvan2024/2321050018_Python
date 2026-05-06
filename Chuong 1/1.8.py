@@ -163,8 +163,10 @@ print(l22[0][:])
 
 #Bài tập:
 #Nhập vào 1 chuỗi số cách nhau bởi " ", chuyển chúng thành list số nguyên và tính tổng.In ra ma trận 1 chiều của chuỗi số đó
-s1 = input("Nhập vào một chuỗi số cách nhau bởi khoảng trắng: ")
-lst = eval("[" + s1.replace(" ",",") + "]") #chuyển chuỗi thành list
+# s1 = input("Nhập vào một chuỗi số cách nhau bởi khoảng trắng: ")
+# lst = eval("[" + s1.replace(" ",",") + "]") #chuyển chuỗi thành list
+lst = s1.split()
+# lst = [int(x) for x in s1.split()]
 print(lst)
 s2 = input("Nhập vào một chuỗi số cách nhau bởi dấu phẩy và các hàng của ma trận cách nhau bởi dấu chấm phẩy: ")
 matran = eval("[" + s2.replace(";","],[").replace(" ",",") + "]")
