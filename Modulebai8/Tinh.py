@@ -1,0 +1,2 @@
+def tinhTich(x,y,z):
+    return x*y*z
